@@ -41,9 +41,40 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let i = 0;
+// Navigation loop through JSON
 const navigation = document.querySelectorAll('a');
-navigation.forEach(navigation => {
-  navigation.textContent = siteContent.nav[`nav-item-${i}`];
-  i++;
-});
+{
+  let i = 0;
+  navigation.forEach(navigation => {
+    navigation.textContent = siteContent.nav[`nav-item-${i}`];
+    i++;
+  });
+}
+
+const ctaH1 = document.querySelector("h1");
+ctaH1.textContent = siteContent.cta.h1;
+
+const ctaButton = document.querySelector("button");
+ctaButton.textContent = siteContent.cta.button;
+
+const ctaImg = document.getElementById("cta-img");
+ctaImg.setAttribute("src", siteContent["cta"]["img-src"]);
+
+const pageH4 = document.querySelectorAll("h4");
+pageH4[0].textContent = siteContent["main-content"]["features-h4"];
+pageH4[1].textContent = siteContent["main-content"]["about-h4"];
+pageH4[2].textContent = siteContent["main-content"]["services-h4"];
+pageH4[3].textContent = siteContent["main-content"]["product-h4"];
+pageH4[4].textContent = siteContent["main-content"]["vision-h4"];
+pageH4[5].textContent = siteContent["contact"]["contact-h4"];
+
+const pageP = document.querySelectorAll("p");
+pageP[0].textContent = siteContent["main-content"]["features-content"];
+pageP[1].textContent = siteContent["main-content"]["about-content"];
+pageP[2].textContent = siteContent["main-content"]["services-content"];
+pageP[3].textContent = siteContent["main-content"]["product-content"];
+pageP[4].textContent = siteContent["main-content"]["vision-content"];
+pageP[5].textContent = siteContent["contact"]["address"];
+pageP[6].textContent = siteContent["contact"]["phone"];
+pageP[7].textContent = siteContent["contact"]["email"];
+pageP[8].textContent = siteContent["footer"]["copyright"];
