@@ -51,6 +51,7 @@ const navigation = document.querySelectorAll('a');
   });
 }
 
+
 const ctaH1 = document.querySelector("h1");
 ctaH1.textContent = siteContent.cta.h1;
 
