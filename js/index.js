@@ -41,6 +41,11 @@ const siteContent = {
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+
+// Change text color of navigation
+const navColor = document.querySelectorAll("header");
+// navColor.style.color = green;
+
 // Navigation loop through JSON
 const navigation = document.querySelectorAll('a');
 {
@@ -50,7 +55,6 @@ const navigation = document.querySelectorAll('a');
     i++;
   });
 }
-
 
 const ctaH1 = document.querySelector("h1");
 ctaH1.textContent = siteContent.cta.h1;
