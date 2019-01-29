@@ -52,6 +52,7 @@ const navigation = document.querySelectorAll('a');
   let i = 0;
   navigation.forEach(navigation => {
     navigation.textContent = siteContent.nav[`nav-item-${i}`];
+    navigation.style.color = "green";
     i++;
   });
 }
