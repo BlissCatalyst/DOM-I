@@ -49,13 +49,17 @@ const navColor = document.querySelectorAll("header");
 // Navigation loop through JSON
 const navigation = document.querySelectorAll('a');
 {
-  let i = 0;
+  let i = 1;
   navigation.forEach(navigation => {
     navigation.textContent = siteContent.nav[`nav-item-${i}`];
     navigation.style.color = "green";
     i++;
   });
 }
+
+// add two navigation things
+const first = document.querySelector("nav");
+console.log(first);
 
 const ctaH1 = document.querySelector("h1");
 ctaH1.textContent = siteContent.cta.h1;
